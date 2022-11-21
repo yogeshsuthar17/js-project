@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myfn()
+        {
+            let a = frm1.name1.value 
+            document.getElementById("ty").innerHTML = a
+            // document.body.style.backgroundColor = a 
+            localStorage.setItem('value',a)
+        }
+
+
+
+
+    </script>
+    <form name="frm1">
+        ENTER:<input type="text" size="8" name="name1"> 
+        <input type="button" onclick="myfn()" value="click"> 
+        <h2 id="ty"></h2>
+        </form>  
+        <a href="color.html">click me to add color </a>
+</body>
+</html>

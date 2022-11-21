@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var a=0
+function count()
+{  
+    var s= localStorage.getItem('val')
+    if(s==null)
+    {
+        s=0
+        localStorage.setItem('val',0)
+        document.getElementById('asp').innerHTML = 0
+    }
+    else
+    {
+        
+        a = parseInt(s)+1
+        localStorage.setItem('val',a)
+       
+    
+        document.getElementById("asp").innerHTML = a
+    }
+
+}
+
+
+
+    </script>
+  
+    <input type="button" onclick="count()" value="count me!">
+    <p id="asp"></p>
+    
+    
+</body>
+</html>
